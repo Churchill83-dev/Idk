@@ -32,3 +32,14 @@ This diagram shows the object-oriented structure of the system. It defines the k
 
 Image 4 – Data Flow Diagram (DFD) Level 0
 This diagram shows how data moves through the entire Greenfield Local Hub system. The central Marketplace Database acts as the core data store, feeding information to and from five main processes: Manage Account, Process Orders, Manage Products, Update Loyalty Rewards, and Track Shipments. Customers interact with account management, order processing, loyalty rewards, and shipment tracking, while Producers interact primarily with order notifications and product management. An optional Shipping Carrier external entity feeds delivery updates back into the tracking process.
+
+
+
+
+**Accessibility Requirements – Greenfield Local Hub**
+
+Greenfield Local Hub must be designed and developed in line with the Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA, ensuring the platform is usable by people with a wide range of disabilities. All visual elements must meet a minimum colour contrast ratio of 4.5:1, including the platform's green and cream colour scheme across navigation bars, product cards, and buttons. Icons must not rely on colour alone to convey meaning, and all text must remain legible when scaled to 200% zoom. Every interactive element across all six pages — including filters, buttons, forms, and dashboard controls — must be fully operable via keyboard alone, with a logical tab order and clearly visible focus indicators maintained throughout.
+
+All images and diagrams must include descriptive alternative text, and all form fields across the login, sign-up, producer dashboard, and account settings pages must have properly associated labels rather than relying on placeholder text. Dynamic content such as shipment tracking updates and loyalty point changes must use ARIA live regions to notify screen reader users in real time. Error messages must be presented as descriptive text linked directly to the relevant input field, and success confirmations such as adding a product to the cart must be communicated both visually and through an accessible notification, never relying on colour change alone to indicate a result.
+
+All interactive elements must meet a minimum touch target size of 44×44 pixels to support users with limited motor control on mobile and tablet devices, and no session or form should expire without giving the user sufficient warning and the option to extend. The platform must use plain, clear language throughout, with consistent navigation and layout across all pages to reduce cognitive load. Features such as the loyalty rewards panel and order tracking progress bar must present information in a simple, structured format, and all page titles must be unique and descriptive so users can easily identify each section of the platform.
