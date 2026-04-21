@@ -1,27 +1,124 @@
-The wireframes for Greenfield Local Hub use three main color groups: dark greens, warm creams, and earthy amber tones. Here’s a simple explanation of each and why they were chosen.
+Development Log – Iterative Development (Code Versions)
 
-**Dark Greens**  
-The main color for the platform is a range of greens. There’s a very dark green for the navigation bar and footer, a medium green for buttons, and a bright green for important buttons like “Shop Local Produce” and “Add to Cart.” These greens were chosen to show that the platform is about fresh, natural, local products. Green is linked to nature, health, freshness, and sustainability, which are important for Greenfield Local Hub.
+⸻
 
-**Warm Cream and Off-White**  
-Instead of a bright white background, the wireframes use a warm cream color. This makes the site feel softer and more natural, setting it apart from regular supermarket websites. White is used for product cards and forms, creating a nice look between the background and the content.
+Version: Code – Copy 1 (Initial Prototype)
 
-**Earthy Amber and Sand Tones**  
-A secondary set of warm amber and sandy colors is used for badges, loyalty rewards, and producer profiles. These colors work well with the greens and connect to the countryside and handmade food. They also highlight important information like “Organic” or “Bestseller” without using harsh colors like red or orange.
+Task: Creating the basic structure of the system
 
-**Contrast and Accessibility**  
-Dark text is used on light backgrounds, and bright green is used on dark green or white to make sure text is easy to read. Buttons have white text on green backgrounds, and status indicators use both color and text to help users with color vision issues.
+In the first version of the project, I focused on building a basic static prototype using HTML. I created the core pages including the homepage, browse products page, and navigation bar. At this stage, the system was purely structural, with minimal styling and no interactivity.
 
-**Why This Palette Works for the Brand**  
-Overall, the colors show trust, freshness, and a link to nature without feeling cold or business-like. It makes Greenfield Local Hub feel more like a farmers’ market or artisan food brand than a regular supermarket, which fits the goal of connecting customers with local producers.
+The homepage included basic sections such as headings, product placeholders, and navigation links. However, there was no consistent styling or layout control.
 
+Evaluation:
+This version successfully established the foundation of the system, but lacked usability, styling, and functionality.
 
+⸻
 
+Version: Code – Copy 2
 
-**Accessibility Requirements – Greenfield Local Hub**
+Task: Introducing CSS styling and layout improvements
 
-Greenfield Local Hub must be designed and developed in line with the Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA, ensuring the platform is usable by people with a wide range of disabilities. All visual elements must meet a minimum colour contrast ratio of 4.5:1, including the platform's green and cream colour scheme across navigation bars, product cards, and buttons. Icons must not rely on colour alone to convey meaning, and all text must remain legible when scaled to 200% zoom. Every interactive element across all six pages — including filters, buttons, forms, and dashboard controls — must be fully operable via keyboard alone, with a logical tab order and clearly visible focus indicators maintained throughout.
+In the second version, I introduced a central CSS file to improve the appearance of the system. I implemented a consistent colour scheme and began structuring the layout using Flexbox and basic CSS positioning.
 
-All images and diagrams must include descriptive alternative text, and all form fields across the login, sign-up, producer dashboard, and account settings pages must have properly associated labels rather than relying on placeholder text. Dynamic content such as shipment tracking updates and loyalty point changes must use ARIA live regions to notify screen reader users in real time. Error messages must be presented as descriptive text linked directly to the relevant input field, and success confirmations such as adding a product to the cart must be communicated both visually and through an accessible notification, never relying on colour change alone to indicate a result.
+I improved the navigation bar and introduced styled sections such as product cards and content blocks. This version made the interface more visually appealing and aligned more closely with my original wireframes.
 
-All interactive elements must meet a minimum touch target size of 44×44 pixels to support users with limited motor control on mobile and tablet devices, and no session or form should expire without giving the user sufficient warning and the option to extend. The platform must use plain, clear language throughout, with consistent navigation and layout across all pages to reduce cognitive load. Features such as the loyalty rewards panel and order tracking progress bar must present information in a simple, structured format, and all page titles must be unique and descriptive so users can easily identify each section of the platform.
+Challenges:
+Maintaining consistency across multiple pages.
+
+Solution:
+I reused CSS classes and applied consistent styling rules across all pages.
+
+Evaluation:
+This version significantly improved usability and visual design but still lacked interactivity.
+
+⸻
+
+Version: Code – Copy 3
+
+Task: Expanding functionality and adding more pages
+
+In this version, I expanded the system by adding additional pages such as the cart, checkout, login/register, and dashboards. I also improved page structure and navigation between pages.
+
+The system now resembled a complete multi-page application, with all major sections required by the project brief included.
+
+Evaluation:
+This version demonstrated full coverage of system requirements but remained mostly static.
+
+⸻
+
+Version: Code – Copy 4
+
+Task: Adding JavaScript interactivity
+
+In this iteration, I introduced JavaScript to add dynamic behaviour. This included:
+
+* Product search functionality (filtering items)
+* Login/register form toggling
+* Cart delivery option toggle with price updates
+
+Challenges:
+The search feature initially did not work correctly due to case sensitivity.
+
+Solution:
+I standardised text comparison by converting values to uppercase.
+
+Evaluation:
+This version marked a significant improvement, transforming the system from static pages into an interactive prototype.
+
+⸻
+
+Version: Code – Copy 5
+
+Task: Beginning backend development
+
+In this version, I introduced a Python backend using Flask. This marked a major transition from a purely frontend system to a full-stack approach.
+
+I began structuring the application using:
+
+* Templates (HTML files)
+* Static folder (CSS)
+* Backend file (app.py)
+
+Challenges:
+Understanding how to connect frontend pages to backend routes.
+
+Solution:
+I organised the project using Flask conventions, allowing pages to be rendered dynamically.
+
+Evaluation:
+This version significantly increased the technical complexity of the project and demonstrated advanced development skills.
+
+⸻
+
+Version: Code – Copy 6 (Final Version)
+
+Task: Database integration and advanced features
+
+In the final version, I implemented a SQLite database (greenfield.db) to support data storage. This allowed the system to move beyond a simple prototype and towards a realistic web application.
+
+I also refined existing features and improved system structure. Additionally, I implemented a loyalty points system, allowing users to earn rewards and receive discounts based on purchases.
+
+Improvements over previous versions:
+
+* Added database for persistent data
+* Introduced backend logic for handling data
+* Implemented loyalty rewards system
+* Improved organisation of files (templates + static)
+
+Challenges:
+Ensuring all components (frontend, backend, database) worked together correctly.
+
+Solution:
+I carefully structured file organisation and tested each component individually before integrating them.
+
+Evaluation:
+This version represents the most complete and advanced implementation of the system. It demonstrates strong technical ability, including full-stack development, and meets the majority of the project requirements at a high level.
+
+⸻
+
+Overall Iteration Reflection
+
+Across all versions, the system evolved from a basic static prototype into a more advanced, data-driven web application. Each iteration introduced new features and improvements, including styling, interactivity, backend integration, and database functionality.
+
+This iterative approach allowed continuous testing and refinement, ensuring that issues were identified and resolved progressively. The final system demonstrates a clear progression in complexity, functionality, and technical skill, meeting the requirements of the project brief and exceeding expectations in several areas.
