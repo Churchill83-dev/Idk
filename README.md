@@ -5,9 +5,9 @@ Greenfield Local Hub
 
 ## 1. Introduction
 
-The purpose of this task is to gather and analyse feedback on the Greenfield Local Hub system in order to inform future improvements. Collecting feedback is essential in the development process as it ensures the system meets both user needs and technical requirements.
+The purpose of this task is to gather and analyse user and technical feedback on the Greenfield Local Hub system in order to inform future development. Collecting feedback is a critical stage in the software development lifecycle, as it ensures that the system meets user requirements, is functional, and provides a positive user experience.
 
-Feedback allows developers to identify usability issues, validate design decisions, and improve functionality. This task follows an iterative development approach, where feedback is used to refine and enhance the system before further implementation.
+This system includes key features such as product browsing, search functionality, shopping cart, checkout process, user authentication, and a loyalty rewards system. Feedback will be used to evaluate how effectively these features perform in practice and to identify areas for improvement. This supports an iterative development approach, where the system is refined based on real user interaction.
 
 ---
 
@@ -15,48 +15,57 @@ Feedback allows developers to identify usability issues, validate design decisio
 
 ### Target Audience
 
-To ensure a comprehensive evaluation, feedback was collected from both:
+Feedback was collected from two distinct groups to ensure a balanced evaluation:
 
 - Non-technical users (customers):  
-  To evaluate usability, navigation, and overall user experience.
+  These users interacted with the system as typical customers would, focusing on usability, navigation, and overall experience.
 
 - Technical users (students with programming knowledge):  
-  To assess system structure, functionality, and potential improvements.
+  These users evaluated the system from a technical perspective, identifying potential issues with functionality, structure, and realism.
 
-This approach ensures both user experience and technical quality are evaluated.
+This combination ensures that both user experience (UX) and technical implementation are effectively assessed.
 
 ---
 
 ### Feedback Methods
 
-Two main methods were used:
+Two primary methods were used:
 
-1. Survey Questionnaire
-   - Used to collect structured, quantitative data
-   - Included rating-based and open-ended questions
+#### 1. Survey Questionnaire
+A structured survey was used to collect quantitative data, allowing results to be measured and compared. This method is effective for identifying patterns and trends across multiple users.
 
-2. User Testing
-   - Users interacted with the system (browsing, cart, checkout)
-   - Observations were made on usability and errors
+#### 2. User Testing
+Participants were asked to complete tasks such as:
+- Browsing products
+- Using the search feature
+- Adding items to the cart
+- Completing the checkout process
 
-These methods were chosen to provide both measurable data and detailed feedback.
+This provided qualitative insights into how users interact with the system in real time and allowed usability issues to be identified.
+
+These methods were chosen to ensure both objective data (ratings) and detailed feedback (observations) were collected.
 
 ---
 
-## 3. Survey Questions
+## 3. Survey Design
 
-Participants were asked the following questions:
+The survey was designed to evaluate all key system features and ensure alignment with the original requirements. Questions included a combination of rating scales, yes/no responses, and open-ended questions.
 
-1. How easy was the website to navigate? (1–5)
-2. How clear was the layout and design? (1–5)
-3. Were you able to find products easily? (Yes/No)
-4. How effective was the search feature? (1–5)
-5. How clear was the checkout process? (1–5)
-6. Did you understand the loyalty rewards system? (Yes/No)
-7. How visually appealing is the website? (1–5)
-8. Did you encounter any errors or issues? (Yes/No – explain)
-9. What did you like most about the system?
-10. What improvements would you suggest?
+Key areas assessed:
+- Navigation and layout
+- Product browsing and search functionality
+- Cart and checkout process
+- Loyalty rewards system
+- Visual design and usability
+
+Example questions included:
+- How easy was the website to navigate? (1–5)
+- Were you able to find products easily? (Yes/No)
+- How clear was the checkout process? (1–5)
+- Did you understand the loyalty rewards system? (Yes/No)
+- What improvements would you suggest?
+
+This ensured that feedback directly related to the core functionality of the system.
 
 ---
 
@@ -69,65 +78,85 @@ A total of 5 users participated in the feedback process.
 - Navigation: Average rating = 4.6/5  
 - Layout & Design: Average rating = 4.4/5  
 - Product Search: 100% of users were able to find products  
-- Search Function: Average rating = 4.2/5  
+- Search Functionality: Average rating = 4.2/5  
 - Checkout Process: Average rating = 3.8/5  
 - Visual Appeal: Average rating = 4.5/5  
-- Loyalty System Understanding: 80% understood it clearly  
+- Loyalty System Understanding: 80% of users understood it clearly  
 
-### Common Issues Identified:
+---
 
-- Checkout process could be clearer  
-- No confirmation after placing an order  
-- Limited feedback when interacting with buttons  
-- Some users expected real account login functionality  
+### Common Feedback Identified:
+
+- The website is easy to navigate and visually appealing  
+- Product browsing and search are effective  
+- The checkout process lacks clarity and feedback  
+- No confirmation is shown after placing an order  
+- Some users expected a fully functional login system  
+- Loyalty system could be more clearly displayed  
 
 ---
 
 ## 5. Analysis of Feedback
 
-The feedback shows that the system performs strongly in terms of usability and design. High ratings for navigation and layout indicate that the interface is intuitive and easy to use. This suggests that the design decisions made during development were effective.
+The feedback indicates that the system performs strongly in terms of usability and front-end design. The high navigation score (4.6/5) suggests that users are able to move through the system efficiently, which reflects effective layout planning and consistent interface design. This aligns with the original design goals created in Task 1.
 
-The product browsing and search functionality were particularly successful, with all users able to find products easily. This confirms that the implementation of the search feature significantly improves user experience.
+Similarly, the product browsing and search functionality were highly successful, with all users able to locate products easily. This demonstrates that the implementation of the search feature and product grid layout significantly enhances usability.
 
-However, the checkout process received a lower rating compared to other areas. This indicates that users found it less clear or less complete. This is likely due to the system being a prototype and lacking full functionality such as order confirmation and validation.
+However, the checkout process received a lower rating (3.8/5), indicating a relative weakness in this area. This suggests that users found the process unclear or incomplete. This is likely due to the prototype nature of the system, where features such as input validation, order confirmation, and dynamic updates are limited.
 
-The loyalty rewards system was generally understood, but some users required further explanation. This suggests that while the feature is valuable, its presentation could be improved.
+The loyalty rewards system was generally understood (80%), but some users required further clarification. This indicates that while the feature is functional, its presentation and visibility could be improved to enhance user understanding.
 
-From a technical perspective, feedback highlighted the lack of full backend integration, particularly in relation to login systems and order processing. This confirms that while the interface is strong, further development is required to make the system fully functional.
+From a technical perspective, feedback highlighted limitations in backend functionality, particularly regarding authentication and data persistence. For example, the login system does not fully validate user credentials against a database, and order data is not permanently stored. This reduces the realism of the system and was identified as an area for improvement.
+
+Overall, the feedback demonstrates that the system is highly effective as a front-end prototype, but requires further backend development to achieve full functionality.
 
 ---
 
 ## 6. Improvements Based on Feedback
 
-Based on the analysis, several improvements have been identified:
+Based on the feedback collected, several targeted improvements have been identified:
 
-### 1. Improve Checkout Process
-- Add order confirmation messages
-- Include validation for form inputs
-- Provide clearer step-by-step guidance
+### 1. Improve Checkout Functionality
+- Implement input validation for forms  
+- Add order confirmation messages  
+- Provide clearer step-by-step user guidance  
 
 ### 2. Enhance User Feedback
-- Add notifications when items are added to cart
-- Improve button interaction feedback
+- Display messages when items are added to the cart  
+- Improve button interaction feedback  
 
-### 3. Strengthen Authentication System
-- Implement full login validation using the database
-- Add secure password handling
+### 3. Develop Authentication System
+- Implement secure login validation  
+- Store user credentials in a database  
+- Improve account functionality  
 
-### 4. Expand Loyalty System
-- Display user points in real-time
-- Show rewards clearly on the dashboard
+### 4. Expand Loyalty Rewards System
+- Display points dynamically on the dashboard  
+- Show available rewards clearly to users  
 
 ### 5. Improve Backend Integration
-- Store orders in the database
-- Allow users to view order history dynamically
+- Store orders in a database  
+- Allow users to view real order history  
+- Improve system realism and functionality  
+
+Each improvement is directly linked to user feedback, ensuring that future development is targeted and effective.
 
 ---
 
 ## 7. Conclusion
 
-The feedback gathered provides valuable insight into both the strengths and weaknesses of the Greenfield Local Hub system. The system is highly effective in terms of usability, design, and product browsing, demonstrating strong front-end development.
+The feedback gathered provides a comprehensive evaluation of the Greenfield Local Hub system. The system performs strongly in areas such as navigation, product browsing, and visual design, demonstrating effective front-end development and user-focused design.
 
-However, the feedback also highlights areas requiring further development, particularly in backend functionality and user interaction. These improvements will guide future development in Task 3B.
+However, the feedback also highlights key limitations, particularly in relation to backend functionality and the checkout process. Addressing these issues will significantly improve the overall quality and realism of the system.
 
-Overall, the use of structured feedback and analysis ensures that the system can be refined in a targeted and effective way, demonstrating a professional and iterative development approach.
+The use of both quantitative and qualitative feedback ensures that development decisions are evidence-based. This supports an iterative approach to development and provides a clear direction for improvements in Task 3B.
+
+---
+
+## Appendix (To be included)
+
+- Full survey questionnaire  
+- Raw results or screenshots  
+- Any charts or visual data representations  
+
+---
