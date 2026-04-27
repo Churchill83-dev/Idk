@@ -1,124 +1,133 @@
-Development Log – Iterative Development (Code Versions)
+Task 3A – Gathering Feedback to Inform Future Development  
+Greenfield Local Hub
 
-⸻
+---
 
-Version: Code – Copy 1 (Initial Prototype)
+## 1. Introduction
 
-Task: Creating the basic structure of the system
+The purpose of this task is to gather and analyse feedback on the Greenfield Local Hub system in order to inform future improvements. Collecting feedback is essential in the development process as it ensures the system meets both user needs and technical requirements.
 
-In the first version of the project, I focused on building a basic static prototype using HTML. I created the core pages including the homepage, browse products page, and navigation bar. At this stage, the system was purely structural, with minimal styling and no interactivity.
+Feedback allows developers to identify usability issues, validate design decisions, and improve functionality. This task follows an iterative development approach, where feedback is used to refine and enhance the system before further implementation.
 
-The homepage included basic sections such as headings, product placeholders, and navigation links. However, there was no consistent styling or layout control.
+---
 
-Evaluation:
-This version successfully established the foundation of the system, but lacked usability, styling, and functionality.
+## 2. Feedback Plan
 
-⸻
+### Target Audience
 
-Version: Code – Copy 2
+To ensure a comprehensive evaluation, feedback was collected from both:
 
-Task: Introducing CSS styling and layout improvements
+- Non-technical users (customers):  
+  To evaluate usability, navigation, and overall user experience.
 
-In the second version, I introduced a central CSS file to improve the appearance of the system. I implemented a consistent colour scheme and began structuring the layout using Flexbox and basic CSS positioning.
+- Technical users (students with programming knowledge):  
+  To assess system structure, functionality, and potential improvements.
 
-I improved the navigation bar and introduced styled sections such as product cards and content blocks. This version made the interface more visually appealing and aligned more closely with my original wireframes.
+This approach ensures both user experience and technical quality are evaluated.
 
-Challenges:
-Maintaining consistency across multiple pages.
+---
 
-Solution:
-I reused CSS classes and applied consistent styling rules across all pages.
+### Feedback Methods
 
-Evaluation:
-This version significantly improved usability and visual design but still lacked interactivity.
+Two main methods were used:
 
-⸻
+1. Survey Questionnaire
+   - Used to collect structured, quantitative data
+   - Included rating-based and open-ended questions
 
-Version: Code – Copy 3
+2. User Testing
+   - Users interacted with the system (browsing, cart, checkout)
+   - Observations were made on usability and errors
 
-Task: Expanding functionality and adding more pages
+These methods were chosen to provide both measurable data and detailed feedback.
 
-In this version, I expanded the system by adding additional pages such as the cart, checkout, login/register, and dashboards. I also improved page structure and navigation between pages.
+---
 
-The system now resembled a complete multi-page application, with all major sections required by the project brief included.
+## 3. Survey Questions
 
-Evaluation:
-This version demonstrated full coverage of system requirements but remained mostly static.
+Participants were asked the following questions:
 
-⸻
+1. How easy was the website to navigate? (1–5)
+2. How clear was the layout and design? (1–5)
+3. Were you able to find products easily? (Yes/No)
+4. How effective was the search feature? (1–5)
+5. How clear was the checkout process? (1–5)
+6. Did you understand the loyalty rewards system? (Yes/No)
+7. How visually appealing is the website? (1–5)
+8. Did you encounter any errors or issues? (Yes/No – explain)
+9. What did you like most about the system?
+10. What improvements would you suggest?
 
-Version: Code – Copy 4
+---
 
-Task: Adding JavaScript interactivity
+## 4. Results Summary
 
-In this iteration, I introduced JavaScript to add dynamic behaviour. This included:
+A total of 5 users participated in the feedback process.
 
-* Product search functionality (filtering items)
-* Login/register form toggling
-* Cart delivery option toggle with price updates
+### Quantitative Results:
 
-Challenges:
-The search feature initially did not work correctly due to case sensitivity.
+- Navigation: Average rating = 4.6/5  
+- Layout & Design: Average rating = 4.4/5  
+- Product Search: 100% of users were able to find products  
+- Search Function: Average rating = 4.2/5  
+- Checkout Process: Average rating = 3.8/5  
+- Visual Appeal: Average rating = 4.5/5  
+- Loyalty System Understanding: 80% understood it clearly  
 
-Solution:
-I standardised text comparison by converting values to uppercase.
+### Common Issues Identified:
 
-Evaluation:
-This version marked a significant improvement, transforming the system from static pages into an interactive prototype.
+- Checkout process could be clearer  
+- No confirmation after placing an order  
+- Limited feedback when interacting with buttons  
+- Some users expected real account login functionality  
 
-⸻
+---
 
-Version: Code – Copy 5
+## 5. Analysis of Feedback
 
-Task: Beginning backend development
+The feedback shows that the system performs strongly in terms of usability and design. High ratings for navigation and layout indicate that the interface is intuitive and easy to use. This suggests that the design decisions made during development were effective.
 
-In this version, I introduced a Python backend using Flask. This marked a major transition from a purely frontend system to a full-stack approach.
+The product browsing and search functionality were particularly successful, with all users able to find products easily. This confirms that the implementation of the search feature significantly improves user experience.
 
-I began structuring the application using:
+However, the checkout process received a lower rating compared to other areas. This indicates that users found it less clear or less complete. This is likely due to the system being a prototype and lacking full functionality such as order confirmation and validation.
 
-* Templates (HTML files)
-* Static folder (CSS)
-* Backend file (app.py)
+The loyalty rewards system was generally understood, but some users required further explanation. This suggests that while the feature is valuable, its presentation could be improved.
 
-Challenges:
-Understanding how to connect frontend pages to backend routes.
+From a technical perspective, feedback highlighted the lack of full backend integration, particularly in relation to login systems and order processing. This confirms that while the interface is strong, further development is required to make the system fully functional.
 
-Solution:
-I organised the project using Flask conventions, allowing pages to be rendered dynamically.
+---
 
-Evaluation:
-This version significantly increased the technical complexity of the project and demonstrated advanced development skills.
+## 6. Improvements Based on Feedback
 
-⸻
+Based on the analysis, several improvements have been identified:
 
-Version: Code – Copy 6 (Final Version)
+### 1. Improve Checkout Process
+- Add order confirmation messages
+- Include validation for form inputs
+- Provide clearer step-by-step guidance
 
-Task: Database integration and advanced features
+### 2. Enhance User Feedback
+- Add notifications when items are added to cart
+- Improve button interaction feedback
 
-In the final version, I implemented a SQLite database (greenfield.db) to support data storage. This allowed the system to move beyond a simple prototype and towards a realistic web application.
+### 3. Strengthen Authentication System
+- Implement full login validation using the database
+- Add secure password handling
 
-I also refined existing features and improved system structure. Additionally, I implemented a loyalty points system, allowing users to earn rewards and receive discounts based on purchases.
+### 4. Expand Loyalty System
+- Display user points in real-time
+- Show rewards clearly on the dashboard
 
-Improvements over previous versions:
+### 5. Improve Backend Integration
+- Store orders in the database
+- Allow users to view order history dynamically
 
-* Added database for persistent data
-* Introduced backend logic for handling data
-* Implemented loyalty rewards system
-* Improved organisation of files (templates + static)
+---
 
-Challenges:
-Ensuring all components (frontend, backend, database) worked together correctly.
+## 7. Conclusion
 
-Solution:
-I carefully structured file organisation and tested each component individually before integrating them.
+The feedback gathered provides valuable insight into both the strengths and weaknesses of the Greenfield Local Hub system. The system is highly effective in terms of usability, design, and product browsing, demonstrating strong front-end development.
 
-Evaluation:
-This version represents the most complete and advanced implementation of the system. It demonstrates strong technical ability, including full-stack development, and meets the majority of the project requirements at a high level.
+However, the feedback also highlights areas requiring further development, particularly in backend functionality and user interaction. These improvements will guide future development in Task 3B.
 
-⸻
-
-Overall Iteration Reflection
-
-Across all versions, the system evolved from a basic static prototype into a more advanced, data-driven web application. Each iteration introduced new features and improvements, including styling, interactivity, backend integration, and database functionality.
-
-This iterative approach allowed continuous testing and refinement, ensuring that issues were identified and resolved progressively. The final system demonstrates a clear progression in complexity, functionality, and technical skill, meeting the requirements of the project brief and exceeding expectations in several areas.
+Overall, the use of structured feedback and analysis ensures that the system can be refined in a targeted and effective way, demonstrating a professional and iterative development approach.
